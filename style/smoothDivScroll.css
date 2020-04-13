@@ -1,0 +1,44 @@
+div.scrollingHotSpotLeft{
+min-width:50px;
+height:100%;
+background-repeat:repeat;
+background-position:center center;
+position:absolute;
+z-index:200;
+left:0;}
+
+div.scrollingHotSpotLeftVisible{
+opacity:.35;
+-moz-opacity:.35;
+filter:alpha(opacity = 35);
+zoom:0;}
+
+div.scrollingHotSpotRight{
+width:50px;
+height:100%;
+background-repeat:repeat;
+background-position:center center;
+position:absolute;
+z-index:200;
+right:0;}
+
+div.scrollingHotSpotRightVisible{
+opacity:.35;
+filter:alpha(opacity = 35);
+-moz-opacity:.35;
+zoom:1;}
+div.scrollWrapper{
+position:relative;
+overflow: hidden;
+width:100%;	height:100%;}
+
+div.scrollableArea{
+white-space:nowrap;
+position:relative;
+width:auto;
+height:100%;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;}
