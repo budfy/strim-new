@@ -3610,10 +3610,11 @@
 	}
 
 	.reiting-commentators {
-		width: 15px;
-		height: 15px;
-		font-size: 10px;
-		opacity: 0.6;
+		width: 35px;
+		height: 35px;
+		font-size: 20px;
+		opacity: 0.4;
+		left: 0;
 	}
 
 	.date-reviews {
@@ -3855,8 +3856,12 @@
 	.wrapper-baner-translation {
 		width: 60%;
 	}
+	.wrapper-baner-translation.drop-field {
+		width: 100%;
+	}
 
-	.choice-status a {
+	.choice-status a,
+	.edit-poster-item p {
 		font-size: 9px;
 	}
 
@@ -3867,6 +3872,10 @@
 
 	.title-transfer {
 		font-size: 8px;
+	}
+
+	.assessment {
+		font-size: 15px;
 	}
 }
 
