@@ -1307,11 +1307,15 @@
 	}
 
 	.active-frame-height {
-		height: calc(46vh - 102px);
+		height: calc(46vh - 28px);
 	}
 
 	.language {
 		margin-top: 18px;
+	}
+
+	.container-stream .content {
+		height: calc(100vh - 71px);
 	}
 }
 
@@ -1804,12 +1808,12 @@
 	}
 
 	.left-content-stream {
-		width: 150px;
 		padding-left: 30px;
 	}
 
 	.help {
 		font-size: 14px;
+		padding-bottom: 0;
 	}
 
 	.active-small-height .text-donut {
@@ -1849,7 +1853,7 @@
 	}
 
 	.title-name-chater-title {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.item-link-menu {
@@ -1864,7 +1868,7 @@
 	}
 
 	.item-sub-title a {
-		font-size: 14px;
+		font-size: 12px;
 		padding: 10px 0;
 	}
 
@@ -2069,7 +2073,7 @@
 	.finance-wrapper,
 	.setting-frame-wrapper,
 	.wrapper-setting-game {
-		height: 55vh;
+		height: 54vh;
 	}
 
 	.list-item h3 {
@@ -2099,6 +2103,7 @@
 	.reiting {
 		width: 50px;
 		height: 50px;
+		min-width: 50px;
 	}
 
 	.reiting span {
@@ -2335,7 +2340,7 @@
 		height: fit-content;
 	}
 
-	.content {
+	.container-stream .content {
 		max-height: calc(100vh - 78px);
 		height: 100%;
 		overflow-y: auto;
@@ -2423,7 +2428,8 @@
 }
 
 @media only screen and (max-width: 808px) and (min-width: 320px) {
-	.content {
+	.container-stream .content,
+	.wrapper-about-frame {
 		max-height: calc(100vh - 53px);
 		height: 100%;
 	}
@@ -2461,6 +2467,10 @@
 	.language,
 	.right-header-block {
 		margin-top: 0;
+	}
+
+	.header-sign-btn {
+		font-size: 14px;
 	}
 }
 
@@ -2581,9 +2591,14 @@
 	}
 
 	.top-info {
-		-webkit-box-orient: vertical;
+		/* -webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
-		flex-direction: column;
+		flex-direction: column; */
+		flex-wrap: wrap;
+	}
+
+	.wrapper-stream-video {
+		width: 100%;
 	}
 
 	.container-social {
@@ -2592,13 +2607,17 @@
 
 	.wrapper-center-block {
 		height: auto;
+		width: calc(100% - 70px);
+	}
+
+	.wrapper-center-block .social-list{
+	}
+
+	.wrapper-center-block .social-list .social-item{
 	}
 
 	.center-info-account {
-		display: -webkit-box;
-		display: flex;
-		margin-left: 0;
-		margin-bottom: 10px;
+		margin: 10px 0;
 	}
 
 	.center-info-account p {
@@ -3252,10 +3271,6 @@
 		margin-left: 20px;
 	}
 
-	.header-sign-btn {
-		font-size: 14px;
-	}
-
 	.camera-before::before,
 	.microfone-before::before {
 		width: 15px;
@@ -3439,7 +3454,7 @@
 
 @media only screen and (max-width: 500px) and (min-width: 320px) {
 	.left-content-stream {
-		padding: 10px 0;
+		width: 150px;
 	}
 
 	.menu-left__icon {
@@ -3532,7 +3547,7 @@
 		margin: 0;
 	}
 
-	.title-name-chater-title {
+	.wrapper-about-chater {
 		position: relative;
 	}
 
@@ -3540,8 +3555,8 @@
 		width: 27px;
 		height: 27px;
 		position: absolute;
-		top: -6px;
-		left: -37px;
+		top: 0px;
+		left: 0px;
 		margin: 0;
 		opacity: 0.5;
 		font-size: 20px;
@@ -3619,10 +3634,6 @@
 
 	.date-reviews {
 		margin-right: 0;
-	}
-
-	.menu-left {
-		padding-left: 10px;
 	}
 
 	.translation-btn {
@@ -3710,6 +3721,8 @@
 		right: 3px;
 		width: 25px;
 		height: 25px;
+		min-width: auto;
+		margin: 5px 5px 5px auto;
 	}
 
 	.reiting span {
@@ -3736,7 +3749,7 @@
 	}
 
 	.bottom-block-about-frame textarea {
-		font-size: 9px;
+		font-size: 12px;
 	}
 
 	.container-social {
@@ -3833,10 +3846,6 @@
 		font-size: 10px;
 	}
 
-	.number-message {
-		top: -8px;
-	}
-
 	.list-item h3 {
 		font-size: 9px;
 		line-height: 1.1;
@@ -3876,6 +3885,18 @@
 
 	.assessment {
 		font-size: 15px;
+	}
+
+	.reiting-container {
+		flex-wrap: wrap;
+	}
+
+	.review_stars_wrap {
+		width: 100%;
+	}
+
+	.donate-btn {
+		margin: 5px auto;
 	}
 }
 
