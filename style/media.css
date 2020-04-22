@@ -13,16 +13,13 @@
 
 	.container-video,
 	.container-video img {
-		max-width: 800px;
 	}
 
 	.next-strim {
-		width: 100%;
 	}
 
 	.video-strim,
 	.next-strim .video-strim {
-		max-width: 800px;
 	}
 
 	.item-list-admin {
@@ -58,16 +55,13 @@
 
 	.container-video,
 	.container-video img {
-		max-width: 400px;
 	}
 
 	.next-strim {
-		width: 100%;
 	}
 
 	.video-strim,
 	.next-strim .video-strim {
-		max-width: 400px;
 	}
 
 	.item-list-admin {
@@ -91,7 +85,6 @@
 
 	.video-strim,
 	.next-strim .video-strim {
-		max-width: 350px;
 	}
 
 	.chat-setting-wrapper .message-person {
@@ -119,7 +112,7 @@
 	}
 
 	.no-bg .about-frame {
-		height: 54vh;
+		height: 56vh;
 	}
 
 	.whatch-stream-player {
@@ -149,18 +142,15 @@
     } */
 
 	.description-block {
-		max-width: 366px;
-		width: 100%;
+		width: 366px;
 	}
 
 	.container-video,
 	.container-video img,
 	.video-strim {
-		max-width: 305px;
 	}
 
 	.next-strim .video-strim {
-		max-width: 267px;
 	}
 
 	.arrow-down,
@@ -724,7 +714,7 @@
 	}
 
 	.setting-frame {
-		height: 84vh !important;
+		height: 84vh;
 	}
 
 	.start-translation-btn {
@@ -1250,7 +1240,6 @@
 @media only screen and (max-width: 1152px) and (min-width: 320px),
 	(max-height: 1000px) {
 	.next-strim {
-		width: 35%;
 	}
 
 	.wrapper-right-list-whatch .wrapper-whatching {
@@ -1347,6 +1336,7 @@
 		position: relative;
 		overflow: hidden;
 		border-radius: 100%;
+		min-width: auto;
 	}
 
 	.item-whatch {
@@ -1582,6 +1572,7 @@
 display: flex;
 flex-wrap: wrap;
 width: 100%;
+align-items: center;
 	}
 
 	.stream-timing{
@@ -3916,10 +3907,12 @@ width: 100%;
 	}
 
 .current-resolution{
+		font-size: 10px;
 
 }
 
 .stream-timing{
+		font-size: 10px;
 	
 }
 

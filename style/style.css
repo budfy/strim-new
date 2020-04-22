@@ -830,6 +830,10 @@ button {
   height: 60vh;
 }
 
+.wrapper-start-translation.no-bg .about-frame {
+ height: calc(100vh - 90px);
+}
+
 .wrapper-about-frame {
   background: url("../image/marmok-smailik-oboi-marmok.jpg") no-repeat;
   background-size: cover;
@@ -3459,9 +3463,8 @@ div.scrollWrapper {
 }
 
 .theme-notification {
-  max-width: 300px;
-  width: 100%;
   margin-right: 15px;
+  width: 300px;
 }
 
 .text-theme {
@@ -3477,9 +3480,8 @@ div.scrollWrapper {
 }
 
 .description-block {
-  max-width: 565px;
-  width: 100%;
   margin-right: 10px;
+  width: 565px;
 }
 
 .description-text {
@@ -3493,8 +3495,7 @@ div.scrollWrapper {
 }
 
 .date-broadcast {
-  max-width: 150px;
-  width: 100%;
+  width: 150px;
   text-align: center;
   margin-right: 10px;
 }
@@ -3505,9 +3506,8 @@ div.scrollWrapper {
 }
 
 .status-translation {
-  max-width: 150px;
-  width: 100%;
   text-align: center;
+  width: 150px;
 }
 
 .status-text {
@@ -3558,18 +3558,20 @@ div.scrollWrapper {
 .choice-block {
   display: -webkit-box;
   display: flex;
-  max-width: 288px;
+  width: 288px;
 }
 
 .choice {
   text-transform: uppercase;
   font-size: 16px;
+  width: 160px;;
 }
 
 .choice-yes,
 .choice-pay {
   color: #ccff00;
   margin-right: 10px;
+  width: 132px;
 }
 
 .none-reiting {
@@ -5483,9 +5485,9 @@ div.scrollWrapper {
 
 .container-video,
 .container-video img {
-  max-width: 400px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .sount-input
@@ -5528,8 +5530,11 @@ div.scrollWrapper {
 }
 
 .video-strim {
-  max-width: 400px;
-  position: relative;
+  position: absolute;
+    top: 0;
+    left: 0;
+  right: 0;
+  bottom: 0;;
 }
 
 .sount-container {
@@ -5609,12 +5614,19 @@ div.scrollWrapper {
   align-items: center;
 }
 
-.wrapper-videstrim {
+.wrapper-videostrim {
   position: absolute;
   left: 0;
   top: 0;
   width: 35%;
   z-index: 12000;
+  max-height: 50%;
+}
+
+.wrapper-videostrim::before{
+  content: "";
+  display: block;
+  padding-top: 56.25%;
 }
 
 .color-picker-wrapper div {
@@ -5839,10 +5851,10 @@ div.scrollWrapper {
   position: absolute;
   bottom: 0;
   left: 0;
+  top: auto;
 }
 
 .next-strim .video-strim {
-  max-width: 295px;
 }
 
 .wrapper-right-list-whatch {
