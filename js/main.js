@@ -385,6 +385,31 @@ $(document).ready(function () {
 		$(".container-title-strim-footer").removeClass("active-violations");
 	});
 
+	/*-------------------------выбор разрешения видео---------------*/
+	$(".resolution-munu-item").on("click", function () {
+		$(this).siblings().removeClass("current");
+		$(this).addClass("current");
+		$(".current-resolution").text($(this).text());
+	});
+
+	/*-------------------------регулировка звука--------------------*/
+	$("#volume").on("input", function () {
+		$(".volume-icon>i").removeClass();
+		let vol = $(this).val();
+		if (vol > 50) {
+			$(".volume-icon>i").removeClass();
+			$(".volume-icon>i").addClass("fas fa-volume-up");
+		}
+		if (vol > 0 && vol <= 50) {
+			$(".volume-icon>i").removeClass();
+			$(".volume-icon>i").addClass("fas fa-volume-down");
+		}
+		if (vol = 0) {
+			$(".volume-icon>i").removeClass();
+			$(".volume-icon>i").addClass('fas fa-volume-mute');
+		}
+	});
+
 	/*-------------------------страница вопросов-------------------*/
 
 	$(".title-name-chater-container").on("click", function (event) {

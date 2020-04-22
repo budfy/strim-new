@@ -421,8 +421,16 @@ button {
 
 .icon-container-strim {
   min-height: 53px;
-  max-width: 110px;
-  width: 100%;
+  width: 100px;
+}
+
+.big-stream-container .icon-container-strim {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 150px;;
 }
 
 .wrapper-video {
@@ -469,6 +477,121 @@ button {
 
 .number-watch span {
   color: #ccff00;
+}
+
+.icon-big-player{
+  width: 50px;
+}
+
+.stream-resolution {
+  position: relative;
+  margin: 0 0 5px 5px;
+}
+
+.resolution-menu {
+  list-style: none;
+  position: absolute;
+  padding: 5px;
+  background-color: #000000aa;
+  display: flex;
+  top: 50%;
+  transform: translate(-120%, -50%);
+  transition: all .5s;
+}
+
+.resolution-munu-item {
+  font-size: 12px;
+  padding: 0 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.resolution-munu-item.current {
+  color: #9cd110;
+}
+
+.resolution-munu-item:hover {
+  color: #ccff00;
+}
+
+.stream-resolution:hover .resolution-menu {
+  transform: translate(0, -50%);
+  left: 100%;
+}
+
+.icon-big-player .stream-resolution .resolution-menu{
+  transform: none;
+    display: block;
+    bottom: 100%;
+    top: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 50px;
+    height: 0;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.icon-big-player .stream-resolution:hover .resolution-menu{
+      height: auto;
+    padding: 5px;
+}
+
+.volume-regulation {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.volume-icon {
+  font-size: 20px;
+  margin: 5px auto;
+  text-align: center;
+  color: #ccff00;
+}
+
+.volume-range-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translate(-220%, -50%);
+  padding: 5px;
+  background-color: #000000aa;
+  width: 200%;
+  transition: all 0.5s;
+  left: 100%;
+}
+
+.volume-range-wrapper input {
+  width: 100%;
+}
+
+.volume-regulation:hover .volume-range-wrapper {
+  transform: translate(0, -50%);
+}
+
+.icon-big-player .volume-regulation .volume-range-wrapper {
+  top: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: none;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    bottom: 0;
+}
+
+.icon-big-player .volume-regulation .volume-range-wrapper input{
+  width: 100%;
+    height: 100%;
+    appearance: slider-vertical;
+}
+
+.icon-big-player .volume-regulation:hover .volume-range-wrapper {
+      bottom: 100%;
+    opacity: 1;
+    height: 100px;
 }
 
 .icon-footer {
@@ -951,9 +1074,9 @@ button {
   padding: 5px 15px;
   -webkit-box-align: center;
   align-items: center;
-      -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-    break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .img-whatcher {
@@ -964,6 +1087,10 @@ button {
   font-size: 15px;
   color: #ccff00;
   word-break: break-all;
+}
+
+.active-small-height .name-whatcher {
+  font-size: 1em;
 }
 
 .big-stream-container {
@@ -2227,6 +2354,10 @@ input::-webkit-inner-spin-button {
   margin-right: 10px;
 }
 
+.active-small-height .strim-complaitn {
+  margin-right: 0;
+}
+
 .warning-block {
   margin-left: 10px;
   margin-right: 5px;
@@ -3132,6 +3263,7 @@ div.scrollWrapper {
   margin-right: 10px;
   display: none;
   background-position: center;
+  min-height: 15px;
 }
 
 .wrapper-about-chater {
@@ -5756,7 +5888,7 @@ div.scrollWrapper {
 }
 
 .setting-frame {
-  height: 88vh !important;
+  height: 88vh;
 }
 
 .footer-setting-translation {
@@ -7412,7 +7544,7 @@ div.scrollWrapper {
 
 .active-small-height .whatch-stream-player {
   width: 100%;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .active-small-height .first-strim-video .big-player {
@@ -7485,7 +7617,6 @@ div.scrollWrapper {
 .active-small-height .list-whatch {
   column-count: 2;
   column-fill: auto;
-  
 }
 
 .active-small-height .list-whatch.list-whatch-small-height {
@@ -7498,6 +7629,7 @@ div.scrollWrapper {
 
 .active-small-height.no-bg .about-frame {
   height: calc(46vh - 135px);
+  padding: 5px 0;
 }
 
 /* .active-small-height .content-list-chat {
