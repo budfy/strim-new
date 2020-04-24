@@ -268,6 +268,10 @@ $(document).ready(function () {
 		$(".registration-title").removeClass("active-title-block");
 		$(".wrapper-loged").removeClass("active-registration-form");
 		$(".wrapper-sign-content").removeClass("none-active-sign-form");
+		$(this)
+			.closest(".container-stream")
+			.find(".wrapper-about-frame")
+			.toggleClass("active-small-height");
 	});
 
 	$(".conditions-btn").on("click", function (event) {
@@ -818,6 +822,7 @@ $(document).ready(function () {
 				.closest(".content")
 				.find(".wrapper-stream-content")
 				.removeClass("active-frame-height");
+			console.log("item-stream if");
 		} else {
 			$(this)
 				.closest(".content")
@@ -828,14 +833,10 @@ $(document).ready(function () {
 				.closest(".content")
 				.find(".wrapper-stream-content")
 				.addClass("active-frame-height");
+			console.log("item-stream else");
 			setTimeout(calcSize, 300);
 		}
 	});
-
-	// $('.active-frame-height>.list-stream>.item-stream').on('click', function () {
-	//     $('.wrapper-stream-content').removeClass('active-frame-height');
-	//     console.log('Class removed');
-	// });
 
 	$(".header-sign-btn").on("click", function (event) {
 		event.preventDefault();
@@ -843,11 +844,9 @@ $(document).ready(function () {
 			.closest(".container-stream")
 			.find(".autorization-frame")
 			.slideToggle(500);
-		$(this)
-			.closest(".container-stream")
-			.find(".wrapper-stream-content")
-			.toggleClass("active-frame-height");
+		$(".wrapper-about-frame").toggleClass("active-small-height");
 		setTimeout(calcSize, 300);
+		console.log("header-sign-btn");
 	});
 
 	$(".start-translation").on("click", function (event) {
@@ -877,6 +876,7 @@ $(document).ready(function () {
 			.find(".wrapper-stream-content")
 			.toggleClass("active-frame-height");
 		setTimeout(calcSize, 300);
+		console.log("frame");
 	});
 
 	$(".notifications-link").on("click", function () {

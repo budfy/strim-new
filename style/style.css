@@ -430,7 +430,6 @@ button {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-	width: 150px;
 }
 
 .wrapper-video {
@@ -1544,7 +1543,9 @@ button {
 
 .img-translation {
 	width: 100%;
-	height: auto;
+	height: 100%;
+	position: absolute;
+	top: 0;
 	/* display: block;
   position: absolute;
   top: 0;
@@ -3856,6 +3857,7 @@ div.scrollWrapper {
 	background-position: 0 0, 0 100%, 0 0, 100% 0;
 	background-repeat: no-repeat;
 	max-height: 345px;
+	position: static;
 }
 
 .edit-poster-item {
@@ -6275,7 +6277,7 @@ div.scrollWrapper {
 }
 
 .active-login-close {
-	height: 24px;
+	height: 25px;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 	font-size: 18px;
@@ -7834,7 +7836,6 @@ div.scrollWrapper {
 
 .active-small-height .active-pay-donut {
 	overflow-y: auto;
-	height: 24vh;
 }
 
 .active-small-height .active-pay-donut::-webkit-scrollbar-track {
@@ -8651,9 +8652,8 @@ div.scrollWrapper {
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	background-color: #000000dd;
+	background-color: #00000080;
 	display: none;
-	z-index: 1010;
 }
 
 .popup-box {
@@ -8666,34 +8666,49 @@ div.scrollWrapper {
 	left: 0;
 	right: 0;
 	transform: translateY(-50%);
+	background-color: #000000;
+	border-radius: 10px;
+	box-shadow: 1px 0px 10px #ffea0080, -1px 0px 10px #ffea0080;
 	padding: 80px 30px;
 }
 
 .popup-text {
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 	display: block;
-	color: #ffffff;
 }
 
 .full-btn {
-	border: 2px solid #ffffff;
-	color: #ffffff;
+	border: 1px solid #ffea00;
+	background-color: #000000;
+	color: #9cd110;
 	padding: 10px;
-	border-radius: 6px;
-	transition: all 0.3s;
+	border-radius: 3px;
+	transition: all 0.5s;
 	margin: 25px auto 0;
 	display: block;
 	font-size: 16px;
-	background-color: transparent;
-	min-width: 90px;
+	animation: scale 5s ease-in-out 250ms infinite;
 }
 
 .full-btn:hover,
 .full-btn:focus {
 	box-shadow: 1px 0px 5px #ffea00ab, -1px 0px 5px #ffea00ab;
-	border: 2px solid #ccff00;
+	animation-play-state: paused;
 	color: #ccff00;
+}
+
+@keyframes scale {
+	from {
+		font-size: 16px;
+	}
+	15% {
+		font-size: 18px;
+	}
+	30% {
+		font-size: 16px;
+		/* transform: scale(1.1); */
+	}
 }
 
 .more {
