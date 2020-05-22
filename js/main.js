@@ -268,10 +268,10 @@ $(document).ready(function () {
 		$(".registration-title").removeClass("active-title-block");
 		$(".wrapper-loged").removeClass("active-registration-form");
 		$(".wrapper-sign-content").removeClass("none-active-sign-form");
-		$(this)
-			.closest(".container-stream")
-			.find(".wrapper-about-frame")
-			.toggleClass("active-small-height");
+		// $(this)
+		// 	.closest(".container-stream")
+		// 	.find(".wrapper-about-frame")
+		// 	.toggleClass("active-small-height");
 	});
 
 	$(".conditions-btn").on("click", function (event) {
