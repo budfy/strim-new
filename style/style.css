@@ -282,22 +282,18 @@ button {
 	left: 0;
 	right: 0;
 	height: 3px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(49, 49, 49, 0.34)),
-		color-stop(4%, rgba(49, 49, 49, 1)),
-		color-stop(54%, rgba(49, 49, 49, 0.98)),
-		to(rgba(49, 49, 49, 0.04))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(49, 49, 49, 0.34) 0%,
-		rgba(49, 49, 49, 1) 4%,
-		rgba(49, 49, 49, 0.98) 54%,
-		rgba(49, 49, 49, 0.04) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(49, 49, 49, 0.34)),
+			color-stop(4%, rgba(49, 49, 49, 1)),
+			color-stop(54%, rgba(49, 49, 49, 0.98)),
+			to(rgba(49, 49, 49, 0.04)));
+	background: linear-gradient(to right,
+			rgba(49, 49, 49, 0.34) 0%,
+			rgba(49, 49, 49, 1) 4%,
+			rgba(49, 49, 49, 0.98) 54%,
+			rgba(49, 49, 49, 0.04) 100%);
 }
 
 .search-container:after {
@@ -307,20 +303,16 @@ button {
 	left: 0;
 	right: 0;
 	height: 3px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(49, 49, 49, 1)),
-		color-stop(81%, rgba(49, 49, 49, 0.98)),
-		to(rgba(49, 49, 49, 0.04))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(49, 49, 49, 1) 0%,
-		rgba(49, 49, 49, 0.98) 81%,
-		rgba(49, 49, 49, 0.04) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(49, 49, 49, 1)),
+			color-stop(81%, rgba(49, 49, 49, 0.98)),
+			to(rgba(49, 49, 49, 0.04)));
+	background: linear-gradient(to right,
+			rgba(49, 49, 49, 1) 0%,
+			rgba(49, 49, 49, 0.98) 81%,
+			rgba(49, 49, 49, 0.04) 100%);
 }
 
 .right-header-block {
@@ -736,7 +728,7 @@ button {
 	padding: 0 30px;
 	display: -webkit-box;
 	display: flex;
-	height: 56vh;
+	height: 55vh;
 }
 
 .regulations-block {
@@ -1541,7 +1533,7 @@ button {
 	object-fit: cover;
 }
 
-.img-translation {
+.wrapper-baner-translation .img-translation {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -1552,6 +1544,15 @@ button {
   left: 0;
   bottom: 0;
   right: 0; */
+}
+
+.block-about-traslation {
+	max-height: 40px;
+	overflow-y: auto;
+}
+
+.drop-field+.block-about-traslation {
+	max-height: unset;
 }
 
 .block-about-traslation p {
@@ -1610,24 +1611,20 @@ button {
 	right: 0;
 	height: 1px;
 	bottom: 0;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .translation-btn:after {
@@ -1643,24 +1640,20 @@ button {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .translation-btn:hover::after {
@@ -1982,6 +1975,7 @@ button {
 	transform: translateY(0%);
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
+	bottom: 0;
 }
 
 .scroll-payment-js {
@@ -2043,24 +2037,20 @@ button {
 	left: 0;
 	right: 0;
 	height: 2px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(253, 253, 253, 1)),
-		color-stop(47%, rgba(246, 246, 246, 1)),
-		color-stop(85%, rgba(252, 250, 252, 1)),
-		to(rgba(255, 252, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(253, 253, 253, 1) 11%,
-		rgba(246, 246, 246, 1) 47%,
-		rgba(252, 250, 252, 1) 85%,
-		rgba(255, 252, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(253, 253, 253, 1)),
+			color-stop(47%, rgba(246, 246, 246, 1)),
+			color-stop(85%, rgba(252, 250, 252, 1)),
+			to(rgba(255, 252, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(253, 253, 253, 1) 11%,
+			rgba(246, 246, 246, 1) 47%,
+			rgba(252, 250, 252, 1) 85%,
+			rgba(255, 252, 255, 0.13) 100%);
 }
 
 .footer-alternative h4 {
@@ -2208,24 +2198,20 @@ button {
 	left: 0;
 	right: 0;
 	height: 1px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(253, 253, 253, 1)),
-		color-stop(47%, rgba(246, 246, 246, 1)),
-		color-stop(85%, rgba(252, 250, 252, 1)),
-		to(rgba(255, 252, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(253, 253, 253, 1) 11%,
-		rgba(246, 246, 246, 1) 47%,
-		rgba(252, 250, 252, 1) 85%,
-		rgba(255, 252, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(253, 253, 253, 1)),
+			color-stop(47%, rgba(246, 246, 246, 1)),
+			color-stop(85%, rgba(252, 250, 252, 1)),
+			to(rgba(255, 252, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(253, 253, 253, 1) 11%,
+			rgba(246, 246, 246, 1) 47%,
+			rgba(252, 250, 252, 1) 85%,
+			rgba(255, 252, 255, 0.13) 100%);
 }
 
 .wrapper-pyment label::after {
@@ -2288,24 +2274,20 @@ input::-webkit-inner-spin-button {
 	right: 0;
 	height: 1px;
 	bottom: 0;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .payment-btn::after,
@@ -2322,24 +2304,20 @@ input::-webkit-inner-spin-button {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .payment-btn:hover::after,
@@ -2437,8 +2415,7 @@ input::-webkit-inner-spin-button {
 	height: 50px;
 	color: #ffffff;
 	width: 95%;
-	background: -webkit-gradient(
-			linear,
+	background: -webkit-gradient(linear,
 			left top,
 			right top,
 			from(#ffffff),
@@ -2446,47 +2423,38 @@ input::-webkit-inner-spin-button {
 			color-stop(3%, transparent),
 			color-stop(97%, transparent),
 			color-stop(97%, #ffffff),
-			to(#ffffff)
-		),
+			to(#ffffff)),
 		-webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(3%, #ffffff), color-stop(3%, transparent), color-stop(97%, transparent), color-stop(97%, #ffffff), color-stop(97%, #ffffff)),
 		-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(10%, #ffffff), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ffffff), color-stop(97%, #ffffff)),
 		-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(10%, #ffffff), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ffffff), color-stop(97%, #ffffff));
-	background: linear-gradient(
-			to right,
+	background: linear-gradient(to right,
 			#ffffff 0%,
 			#ffffff 3%,
 			transparent 3%,
 			transparent 97%,
 			#ffffff 97%,
-			#ffffff 100%
-		),
-		linear-gradient(
-			to right,
+			#ffffff 100%),
+		linear-gradient(to right,
 			#ffffff 0%,
 			#ffffff 3%,
 			transparent 3%,
 			transparent 97%,
 			#ffffff 97%,
-			#ffffff 97%
-		),
-		linear-gradient(
-			to bottom,
+			#ffffff 97%),
+		linear-gradient(to bottom,
 			#ffffff 0%,
 			#ffffff 10%,
 			transparent 10%,
 			transparent 90%,
 			#ffffff 90%,
-			#ffffff 97%
-		),
-		linear-gradient(
-			to bottom,
+			#ffffff 97%),
+		linear-gradient(to bottom,
 			#ffffff 0%,
 			#ffffff 10%,
 			transparent 10%,
 			transparent 90%,
 			#ffffff 90%,
-			#ffffff 97%
-		);
+			#ffffff 97%);
 	background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
 	background-position: 0 0, 0 100%, 0 0, 100% 0;
 	background-repeat: no-repeat;
@@ -2675,8 +2643,7 @@ div.scrollWrapper {
 }
 
 .recensia .container-input-write {
-	background: -webkit-gradient(
-			linear,
+	background: -webkit-gradient(linear,
 			left top,
 			right top,
 			from(#ccff00),
@@ -2684,47 +2651,38 @@ div.scrollWrapper {
 			color-stop(0%, transparent),
 			color-stop(98%, transparent),
 			color-stop(98%, #ccff00),
-			to(#ccff00)
-		),
+			to(#ccff00)),
 		-webkit-gradient(linear, left top, right top, from(#ccff00), color-stop(2%, #ccff00), color-stop(0%, transparent), color-stop(98%, transparent), color-stop(98%, #ccff00), color-stop(98%, #ccff00)),
 		-webkit-gradient(linear, left top, left bottom, from(#ccff00), color-stop(10%, #ccff00), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ccff00), color-stop(98%, #ccff00)),
 		-webkit-gradient(linear, left top, left bottom, from(#ccff00), color-stop(10%, #ccff00), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ccff00), color-stop(98%, #ccff00));
-	background: linear-gradient(
-			to right,
+	background: linear-gradient(to right,
 			#ccff00 0%,
 			#ccff00 2%,
 			transparent 0%,
 			transparent 98%,
 			#ccff00 98%,
-			#ccff00 100%
-		),
-		linear-gradient(
-			to right,
+			#ccff00 100%),
+		linear-gradient(to right,
 			#ccff00 0%,
 			#ccff00 2%,
 			transparent 0%,
 			transparent 98%,
 			#ccff00 98%,
-			#ccff00 98%
-		),
-		linear-gradient(
-			to bottom,
+			#ccff00 98%),
+		linear-gradient(to bottom,
 			#ccff00 0%,
 			#ccff00 10%,
 			transparent 10%,
 			transparent 90%,
 			#ccff00 90%,
-			#ccff00 98%
-		),
-		linear-gradient(
-			to bottom,
+			#ccff00 98%),
+		linear-gradient(to bottom,
 			#ccff00 0%,
 			#ccff00 10%,
 			transparent 10%,
 			transparent 90%,
 			#ccff00 90%,
-			#ccff00 98%
-		);
+			#ccff00 98%);
 	background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
 	background-position: 0 0, 0 100%, 0 0, 100% 0;
 	background-repeat: no-repeat;
@@ -2770,49 +2728,49 @@ div.scrollWrapper {
 	z-index: 0;
 }
 
-#review_stars input ~ label i,
-#review_stars1 input ~ label i {
+#review_stars input~label i,
+#review_stars1 input~label i {
 	color: #2e4000;
 	font-size: 23px;
 }
 
-#review_stars2 input ~ label i,
-#review_stars3 input ~ label i {
+#review_stars2 input~label i,
+#review_stars3 input~label i {
 	color: transparent;
 	border: 1px solid #ffffff;
 	border-radius: 100%;
 	font-size: 6px;
 }
 
-#review_stars4 input ~ label i {
+#review_stars4 input~label i {
 	color: transparent;
 	border: 1px solid #ffffff;
 	border-radius: 100%;
 	font-size: 9px;
 }
 
-#review_stars1 input ~ label i {
+#review_stars1 input~label i {
 	font-size: 16px;
 }
 
-#review_stars input:checked ~ label i,
-#review_stars1 input:checked ~ label i {
+#review_stars input:checked~label i,
+#review_stars1 input:checked~label i {
 	color: #ccff00;
 	font-size: 23px;
 }
 
-#review_stars2 input:checked ~ label i,
-#review_stars3 input:checked ~ label i {
+#review_stars2 input:checked~label i,
+#review_stars3 input:checked~label i {
 	font-size: 6px;
 	color: #ffffff;
 }
 
-#review_stars4 input:checked ~ label i {
+#review_stars4 input:checked~label i {
 	font-size: 9px;
 	color: #ffffff;
 }
 
-#review_stars1 input:checked ~ label i {
+#review_stars1 input:checked~label i {
 	color: #ffea00;
 	font-size: 16px;
 }
@@ -2849,21 +2807,21 @@ div.scrollWrapper {
 }
 
 #review_stars label:hover i,
-#review_stars label:hover ~ label i {
+#review_stars label:hover~label i {
 	color: #ccff00;
 }
 
 #review_stars2 label:hover i,
-#review_stars2 label:hover ~ label i,
+#review_stars2 label:hover~label i,
 #review_stars3 label:hover i,
-#review_stars3 label:hover ~ label i,
+#review_stars3 label:hover~label i,
 #review_stars4 label:hover i,
-#review_stars4 label:hover ~ label i {
+#review_stars4 label:hover~label i {
 	color: #ffffff;
 }
 
 #review_stars1 label:hover i,
-#review_stars1 label:hover ~ label i {
+#review_stars1 label:hover~label i {
 	color: #ffea00;
 }
 
@@ -3144,7 +3102,7 @@ div.scrollWrapper {
 	align-self: flex-end;
 }
 
-.item-question + .next-write {
+.item-question+.next-write {
 	margin-bottom: 10px;
 }
 
@@ -3375,9 +3333,7 @@ div.scrollWrapper {
 	transition: 0.5s;
 }
 
-.active-delete-question
-	.wrapper-notification-message
-	.delete-notification-message {
+.active-delete-question .wrapper-notification-message .delete-notification-message {
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
 	display: block;
@@ -3463,9 +3419,11 @@ div.scrollWrapper {
 	margin-bottom: 0;
 }
 
-.theme-notification {
-	margin-right: 15px;
-	width: 300px;
+.theme-notification,
+.description-block {
+	width: 50%;
+	max-width: 400px;
+	margin-right: 10px;
 }
 
 .text-theme {
@@ -3478,11 +3436,6 @@ div.scrollWrapper {
 	-moz-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	-webkit-box-orient: vertical;
-}
-
-.description-block {
-	margin-right: 10px;
-	width: 565px;
 }
 
 .description-text {
@@ -3551,8 +3504,7 @@ div.scrollWrapper {
 	left: 0;
 	width: 30px;
 	height: 30px;
-	background: url("../image/closed-door-with-border-silhouette-green.svg")
-		no-repeat;
+	background: url("../image/closed-door-with-border-silhouette-green.svg") no-repeat;
 	background-size: contain;
 }
 
@@ -3803,8 +3755,7 @@ div.scrollWrapper {
 	-webkit-box-direction: normal;
 	flex-direction: column;
 	padding-bottom: 30px;
-	background: -webkit-gradient(
-			linear,
+	background: -webkit-gradient(linear,
 			left top,
 			right top,
 			from(#ffffff),
@@ -3812,47 +3763,38 @@ div.scrollWrapper {
 			color-stop(0%, transparent),
 			color-stop(96%, transparent),
 			color-stop(96%, #ffffff),
-			to(#ffffff)
-		),
+			to(#ffffff)),
 		-webkit-gradient(linear, left top, right top, from(#ffffff), color-stop(4%, #ffffff), color-stop(0%, transparent), color-stop(96%, transparent), color-stop(96%, #ffffff), color-stop(96%, #ffffff)),
 		-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(10%, #ffffff), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ffffff), color-stop(96%, #ffffff)),
 		-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(10%, #ffffff), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ffffff), color-stop(96%, #ffffff));
-	background: linear-gradient(
-			to right,
+	background: linear-gradient(to right,
 			#ffffff 0%,
 			#ffffff 4%,
 			transparent 0%,
 			transparent 96%,
 			#ffffff 96%,
-			#ffffff 100%
-		),
-		linear-gradient(
-			to right,
+			#ffffff 100%),
+		linear-gradient(to right,
 			#ffffff 0%,
 			#ffffff 4%,
 			transparent 0%,
 			transparent 96%,
 			#ffffff 96%,
-			#ffffff 96%
-		),
-		linear-gradient(
-			to bottom,
+			#ffffff 96%),
+		linear-gradient(to bottom,
 			#ffffff 0%,
 			#ffffff 10%,
 			transparent 10%,
 			transparent 90%,
 			#ffffff 90%,
-			#ffffff 96%
-		),
-		linear-gradient(
-			to bottom,
+			#ffffff 96%),
+		linear-gradient(to bottom,
 			#ffffff 0%,
 			#ffffff 10%,
 			transparent 10%,
 			transparent 90%,
 			#ffffff 90%,
-			#ffffff 96%
-		);
+			#ffffff 96%);
 	background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
 	background-position: 0 0, 0 100%, 0 0, 100% 0;
 	background-repeat: no-repeat;
@@ -3902,9 +3844,9 @@ div.scrollWrapper {
 	transition: all 0.5s;
 }
 
-.edit-about-translation:focus {
+/* .edit-about-translation:focus {
 	background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .btn-close,
 .close-public-change {
@@ -4000,8 +3942,7 @@ div.scrollWrapper {
 }
 
 .recensia-new {
-	background: -webkit-gradient(
-			linear,
+	background: -webkit-gradient(linear,
 			left top,
 			right top,
 			from(#ccff00),
@@ -4009,47 +3950,38 @@ div.scrollWrapper {
 			color-stop(0%, transparent),
 			color-stop(98%, transparent),
 			color-stop(98%, #ccff00),
-			to(#ccff00)
-		),
+			to(#ccff00)),
 		-webkit-gradient(linear, left top, right top, from(#ccff00), color-stop(2%, #ccff00), color-stop(0%, transparent), color-stop(98%, transparent), color-stop(98%, #ccff00), color-stop(98%, #ccff00)),
 		-webkit-gradient(linear, left top, left bottom, from(#ccff00), color-stop(10%, #ccff00), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ccff00), color-stop(98%, #ccff00)),
 		-webkit-gradient(linear, left top, left bottom, from(#ccff00), color-stop(10%, #ccff00), color-stop(10%, transparent), color-stop(90%, transparent), color-stop(90%, #ccff00), color-stop(98%, #ccff00));
-	background: linear-gradient(
-			to right,
+	background: linear-gradient(to right,
 			#ccff00 0%,
 			#ccff00 2%,
 			transparent 0%,
 			transparent 98%,
 			#ccff00 98%,
-			#ccff00 100%
-		),
-		linear-gradient(
-			to right,
+			#ccff00 100%),
+		linear-gradient(to right,
 			#ccff00 0%,
 			#ccff00 2%,
 			transparent 0%,
 			transparent 98%,
 			#ccff00 98%,
-			#ccff00 98%
-		),
-		linear-gradient(
-			to bottom,
+			#ccff00 98%),
+		linear-gradient(to bottom,
 			#ccff00 0%,
 			#ccff00 10%,
 			transparent 10%,
 			transparent 90%,
 			#ccff00 90%,
-			#ccff00 98%
-		),
-		linear-gradient(
-			to bottom,
+			#ccff00 98%),
+		linear-gradient(to bottom,
 			#ccff00 0%,
 			#ccff00 10%,
 			transparent 10%,
 			transparent 90%,
 			#ccff00 90%,
-			#ccff00 98%
-		);
+			#ccff00 98%);
 	background-size: 100% 3px, 100% 3px, 3px 100%, 3px 100%;
 	background-position: 0 0, 0 100%, 0 0, 100% 0;
 	background-repeat: no-repeat;
@@ -4063,11 +3995,13 @@ div.scrollWrapper {
 }
 
 .recensia-new:focus {
-	background-color: #00000080;
+	outline: transparent;
 }
 
-.your-mark {
+.block-about-traslation.your-mark {
 	margin-right: 22px;
+	max-height: unset;
+	overflow: auto;
 }
 
 .setting-transfer-tickets,
@@ -4173,20 +4107,18 @@ div.scrollWrapper {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-image-source: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	border-image-source: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 	border-width: 1px;
 	border-image-slice: 1;
 }
 
-.how-much:focus + label:after,
-.how-much:hover + label:after {
+.how-much:focus+label:after,
+.how-much:hover+label:after {
 	width: 76% !important;
 }
 
@@ -4405,24 +4337,20 @@ div.scrollWrapper {
 	right: 0;
 	height: 1px;
 	bottom: 0;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .withdraw-input-btn:after {
@@ -4438,24 +4366,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .withdraw-input-btn:hover::after {
@@ -4554,6 +4478,22 @@ div.scrollWrapper {
 	align-items: center;
 }
 
+/* .container-item-table {
+	flex-wrap: wrap;
+} */
+
+.wrapper-table-item {
+	flex-basis: 30%;
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.wrapper-table-item:nth-child(2) {
+	flex-basis: 70%;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
 .exit-btn::after {
 	content: "";
 	position: absolute;
@@ -4567,24 +4507,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .exit-btn:hover::after {
@@ -4857,14 +4793,12 @@ div.scrollWrapper {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-image-source: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	border-image-source: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 	border-width: 1px;
 	border-image-slice: 1;
 }
@@ -4890,26 +4824,22 @@ div.scrollWrapper {
 	left: 0;
 	right: 0;
 	height: 2px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(210, 255, 82, 0)),
-		color-stop(10%, rgba(204, 253, 80, 0)),
-		color-stop(22%, rgba(196, 250, 78, 1)),
-		color-stop(83%, rgba(156, 236, 69, 1)),
-		color-stop(95%, rgba(148, 233, 67, 0)),
-		to(rgba(145, 232, 66, 0))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(210, 255, 82, 0) 0%,
-		rgba(204, 253, 80, 0) 10%,
-		rgba(196, 250, 78, 1) 22%,
-		rgba(156, 236, 69, 1) 83%,
-		rgba(148, 233, 67, 0) 95%,
-		rgba(145, 232, 66, 0) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(210, 255, 82, 0)),
+			color-stop(10%, rgba(204, 253, 80, 0)),
+			color-stop(22%, rgba(196, 250, 78, 1)),
+			color-stop(83%, rgba(156, 236, 69, 1)),
+			color-stop(95%, rgba(148, 233, 67, 0)),
+			to(rgba(145, 232, 66, 0)));
+	background: linear-gradient(to right,
+			rgba(210, 255, 82, 0) 0%,
+			rgba(204, 253, 80, 0) 10%,
+			rgba(196, 250, 78, 1) 22%,
+			rgba(156, 236, 69, 1) 83%,
+			rgba(148, 233, 67, 0) 95%,
+			rgba(145, 232, 66, 0) 100%);
 }
 
 .footer-setting-frame {
@@ -5003,14 +4933,12 @@ div.scrollWrapper {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-image-source: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	border-image-source: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 	border-width: 1px;
 	border-image-slice: 1;
 }
@@ -5035,28 +4963,24 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
-.edit-input-form:focus + label:after,
-.edit-input-form:hover + label:after {
+.edit-input-form:focus+label:after,
+.edit-input-form:hover+label:after {
 	width: 100%;
 }
 
@@ -5108,24 +5032,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .registration::before,
@@ -5137,24 +5057,20 @@ div.scrollWrapper {
 	right: 0;
 	height: 1px;
 	bottom: 0;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .social-reg {
@@ -5166,7 +5082,7 @@ div.scrollWrapper {
 	height: 30px;
 }
 
-.social-reg-list li + li {
+.social-reg-list li+li {
 	margin-left: 15px;
 }
 
@@ -5235,9 +5151,7 @@ div.scrollWrapper {
 	position: relative;
 }
 
-.checkbox-custom
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::before {
+.checkbox-custom+.checkbox-custom-label>.checkbox-custom-label-span::before {
 	content: "";
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -5249,9 +5163,7 @@ div.scrollWrapper {
 	margin-bottom: 5px;
 }
 
-.checkbox-custom:checked
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::after {
+.checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after {
 	content: "";
 	position: absolute;
 	left: 2px;
@@ -5262,18 +5174,11 @@ div.scrollWrapper {
 	background: #ccff00;
 }
 
-.setting-left-footer
-	> .sount-container
-	> .sound-input
-	> .checkbox-custom-label
-	> .checkbox-custom-label-span::after {
+.setting-left-footer>.sount-container>.sound-input>.checkbox-custom-label>.checkbox-custom-label-span::after {
 	top: -5px;
 }
 
-.about-your-frame
-	> .new-my-message
-	> .checkbox-custom-label
-	> .checkbox-custom-label-span::after {
+.about-your-frame>.new-my-message>.checkbox-custom-label>.checkbox-custom-label-span::after {
 	top: 1px;
 }
 
@@ -5335,14 +5240,12 @@ div.scrollWrapper {
 }
 
 .close-doore-link.active-status-link::before {
-	background: url("../image/closed-door-with-border-silhouette-green.svg")
-		no-repeat;
+	background: url("../image/closed-door-with-border-silhouette-green.svg") no-repeat;
 	background-size: contain;
 }
 
 .close-doore-link:hover::before {
-	background: url("../image/closed-door-with-border-silhouette-green.svg")
-		no-repeat;
+	background: url("../image/closed-door-with-border-silhouette-green.svg") no-repeat;
 	background-size: contain;
 }
 
@@ -5359,8 +5262,7 @@ div.scrollWrapper {
 }
 
 .private-link.active-status-link::before {
-	background: url("../image/one-man-shouting-to-another-man-green.svg")
-		no-repeat;
+	background: url("../image/one-man-shouting-to-another-man-green.svg") no-repeat;
 	background-size: contain;
 	height: 37px;
 	width: 48px;
@@ -5368,8 +5270,7 @@ div.scrollWrapper {
 }
 
 .private-link:hover::before {
-	background: url("../image/one-man-shouting-to-another-man-green.svg")
-		no-repeat;
+	background: url("../image/one-man-shouting-to-another-man-green.svg") no-repeat;
 	background-size: contain;
 	height: 37px;
 	width: 48px;
@@ -5407,14 +5308,12 @@ div.scrollWrapper {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-image-source: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	border-image-source: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 	border-width: 1px;
 	border-image-slice: 1;
 }
@@ -5492,14 +5391,8 @@ div.scrollWrapper {
 	object-fit: cover;
 }
 
-.sount-input
-	> .checkbox-custom
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::before,
-.audio-container
-	.checkbox-custom
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::before {
+.sount-input>.checkbox-custom+.checkbox-custom-label>.checkbox-custom-label-span::before,
+.audio-container .checkbox-custom+.checkbox-custom-label>.checkbox-custom-label-span::before {
 	content: "";
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -5511,14 +5404,8 @@ div.scrollWrapper {
 	margin-bottom: 5px;
 }
 
-.sount-input
-	> .checkbox-custom:checked
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::after,
-.audio-container
-	.checkbox-custom:checked
-	+ .checkbox-custom-label
-	> .checkbox-custom-label-span::after {
+.sount-input>.checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after,
+.audio-container .checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after {
 	content: "";
 	position: absolute;
 	left: 2px;
@@ -5643,7 +5530,7 @@ div.scrollWrapper {
 	height: 22px !important;
 }
 
-.layout_default.picker_wrapper > * {
+.layout_default.picker_wrapper>* {
 	margin-bottom: 0 !important;
 }
 
@@ -5856,8 +5743,7 @@ div.scrollWrapper {
 	top: auto;
 }
 
-.next-strim .video-strim {
-}
+.next-strim .video-strim {}
 
 .wrapper-right-list-whatch {
 	position: absolute;
@@ -5951,24 +5837,20 @@ div.scrollWrapper {
 	right: 0;
 	height: 1px;
 	bottom: 0;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .schedules::after {
@@ -5984,24 +5866,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .schedules:hover::after {
@@ -6040,24 +5918,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .start-translation-btn:hover::after {
@@ -6289,14 +6163,12 @@ div.scrollWrapper {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-image-source: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	border-image-source: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 	border-width: 1px;
 	border-image-slice: 1;
 }
@@ -6485,24 +6357,20 @@ div.scrollWrapper {
 	left: 0;
 	right: 0;
 	height: 1px;
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(255, 255, 255, 0.14)),
-		color-stop(11%, rgba(255, 255, 255, 1)),
-		color-stop(47%, rgba(255, 255, 255, 1)),
-		color-stop(85%, rgba(255, 255, 255, 1)),
-		to(rgba(255, 255, 255, 0.13))
-	);
-	background: linear-gradient(
-		to right,
-		rgba(255, 255, 255, 0.14) 0%,
-		rgba(255, 255, 255, 1) 11%,
-		rgba(255, 255, 255, 1) 47%,
-		rgba(255, 255, 255, 1) 85%,
-		rgba(255, 255, 255, 0.13) 100%
-	);
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(255, 255, 255, 0.14)),
+			color-stop(11%, rgba(255, 255, 255, 1)),
+			color-stop(47%, rgba(255, 255, 255, 1)),
+			color-stop(85%, rgba(255, 255, 255, 1)),
+			to(rgba(255, 255, 255, 0.13)));
+	background: linear-gradient(to right,
+			rgba(255, 255, 255, 0.14) 0%,
+			rgba(255, 255, 255, 1) 11%,
+			rgba(255, 255, 255, 1) 47%,
+			rgba(255, 255, 255, 1) 85%,
+			rgba(255, 255, 255, 0.13) 100%);
 }
 
 .restore-password-btn::after {
@@ -6518,24 +6386,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .restore-password-btn:hover::after {
@@ -6692,6 +6556,11 @@ div.scrollWrapper {
 	transition: 0.5s;
 }
 
+.container-payment {
+	width: 100%;
+	height: 100%;
+}
+
 .activeCard .add-payment {
 	-webkit-transform: translateY(-220%);
 	transform: translateY(-220%);
@@ -6700,6 +6569,7 @@ div.scrollWrapper {
 	transition: 0.5s;
 	display: -webkit-box;
 	display: flex;
+	bottom: 5px;
 }
 
 .card-active {
@@ -7029,24 +6899,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .edit-btn-video:hover::after {
@@ -7206,24 +7072,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .title-change-password:hover::after {
@@ -7308,24 +7170,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .change-bg:hover::after {
@@ -7377,24 +7235,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .btn-change:hover {
@@ -7579,10 +7433,7 @@ div.scrollWrapper {
 }
 
 .active-small-height .whatch-stream-player .item-footer .icon-container-strim,
-.active-small-height
-	.whatch-stream-player
-	.item-footer
-	.container-title-strim-footer {
+.active-small-height .whatch-stream-player .item-footer .container-title-strim-footer {
 	display: none;
 }
 
@@ -7642,8 +7493,9 @@ div.scrollWrapper {
 }
 
 .active-small-height.no-bg .about-frame {
-	height: calc(46vh - 135px);
+	height: calc(46vh - 125px);
 	padding: 5px 0;
+	border-bottom: none;
 }
 
 /* .active-small-height .content-list-chat {
@@ -7652,7 +7504,7 @@ div.scrollWrapper {
 
 .active-small-height .block-write {
 	position: absolute;
-	bottom: -2px;
+	bottom: 0;
 }
 
 .active-small-height .big-stream-container {
@@ -7665,7 +7517,7 @@ div.scrollWrapper {
 
 .active-small-height {
 	position: relative;
-	height: calc(46vh - 122px);
+	height: calc(46vh - 80px);
 }
 
 .small-height-block,
@@ -7692,53 +7544,32 @@ div.scrollWrapper {
 	line-height: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.violations::-webkit-input-placeholder {
+.active-small-height .whatch-stream-player .small-height-block .violations::-webkit-input-placeholder {
 	font-size: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.violations::-moz-placeholder {
+.active-small-height .whatch-stream-player .small-height-block .violations::-moz-placeholder {
 	font-size: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.violations:-ms-input-placeholder {
+.active-small-height .whatch-stream-player .small-height-block .violations:-ms-input-placeholder {
 	font-size: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.violations::-ms-input-placeholder {
+.active-small-height .whatch-stream-player .small-height-block .violations::-ms-input-placeholder {
 	font-size: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.violations::placeholder {
+.active-small-height .whatch-stream-player .small-height-block .violations::placeholder {
 	font-size: 12px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.close-violations {
+.active-small-height .whatch-stream-player .small-height-block .close-violations {
 	width: 10px;
 	height: 10px;
 }
 
-.active-small-height
-	.whatch-stream-player
-	.small-height-block
-	.send-violations-btn {
+.active-small-height .whatch-stream-player .small-height-block .send-violations-btn {
 	margin-right: 5px;
 	font-size: 14px;
 }
@@ -8344,24 +8175,20 @@ div.scrollWrapper {
 	transition: width 0.3s ease-in-out;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	background: -webkit-gradient(
-		linear,
-		left top,
-		right top,
-		from(rgba(204, 255, 0, 0.14)),
-		color-stop(11%, rgba(204, 255, 0, 1)),
-		color-stop(47%, rgba(204, 255, 0, 1)),
-		color-stop(85%, rgba(204, 255, 0, 1)),
-		to(rgba(204, 255, 0, 0.13))
-	) !important;
-	background: linear-gradient(
-		to right,
-		rgba(204, 255, 0, 0.14) 0%,
-		rgba(204, 255, 0, 1) 11%,
-		rgba(204, 255, 0, 1) 47%,
-		rgba(204, 255, 0, 1) 85%,
-		rgba(204, 255, 0, 0.13) 100%
-	) !important;
+	background: -webkit-gradient(linear,
+			left top,
+			right top,
+			from(rgba(204, 255, 0, 0.14)),
+			color-stop(11%, rgba(204, 255, 0, 1)),
+			color-stop(47%, rgba(204, 255, 0, 1)),
+			color-stop(85%, rgba(204, 255, 0, 1)),
+			to(rgba(204, 255, 0, 0.13))) !important;
+	background: linear-gradient(to right,
+			rgba(204, 255, 0, 0.14) 0%,
+			rgba(204, 255, 0, 1) 11%,
+			rgba(204, 255, 0, 1) 47%,
+			rgba(204, 255, 0, 1) 85%,
+			rgba(204, 255, 0, 0.13) 100%) !important;
 }
 
 .change-status-btn:hover::after,

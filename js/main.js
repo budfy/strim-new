@@ -847,6 +847,9 @@ $(document).ready(function () {
 		$(".wrapper-about-frame").toggleClass("active-small-height");
 		setTimeout(calcSize, 300);
 		console.log("header-sign-btn");
+		$(".wrapper-stream-content").toggleClass("active-small-height");
+		setTimeout(calcSize, 300);
+		console.log("header-sign-btn");
 	});
 
 	$(".start-translation").on("click", function (event) {

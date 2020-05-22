@@ -12,15 +12,12 @@
 	}
 
 	.container-video,
-	.container-video img {
-	}
+	.container-video img {}
 
-	.next-strim {
-	}
+	.next-strim {}
 
 	.video-strim,
-	.next-strim .video-strim {
-	}
+	.next-strim .video-strim {}
 
 	.item-list-admin {
 		max-width: unset;
@@ -54,15 +51,12 @@
 	}
 
 	.container-video,
-	.container-video img {
-	}
+	.container-video img {}
 
-	.next-strim {
-	}
+	.next-strim {}
 
 	.video-strim,
-	.next-strim .video-strim {
-	}
+	.next-strim .video-strim {}
 
 	.item-list-admin {
 		width: 20%;
@@ -84,8 +78,7 @@
 	}
 
 	.video-strim,
-	.next-strim .video-strim {
-	}
+	.next-strim .video-strim {}
 
 	.chat-setting-wrapper .message-person {
 		max-width: 80%;
@@ -147,11 +140,9 @@
 
 	.container-video,
 	.container-video img,
-	.video-strim {
-	}
+	.video-strim {}
 
-	.next-strim .video-strim {
-	}
+	.next-strim .video-strim {}
 
 	.arrow-down,
 	.arrow-up {
@@ -165,8 +156,8 @@
 		height: 15px;
 	}
 
-	.checkbox-custom + .checkbox-custom-label::before,
-	.checkbox-custom:checked + .checkbox-custom-label::after {
+	.checkbox-custom+.checkbox-custom-label::before,
+	.checkbox-custom:checked+.checkbox-custom-label::after {
 		width: 15px;
 		height: 15px;
 	}
@@ -337,7 +328,7 @@
 
 	.item-info h4,
 	.item-info span {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	/* .edit-poster-item {
@@ -669,7 +660,7 @@
 		left: 32%;
 	}
 
-	#review_stars4 input ~ label i {
+	#review_stars4 input~label i {
 		font-size: 8px;
 	}
 
@@ -682,8 +673,8 @@
 		font-size: 16px;
 	}
 
-	.checkbox-custom + .checkbox-custom-label::before,
-	.checkbox-custom:checked + .checkbox-custom-label::after {
+	.checkbox-custom+.checkbox-custom-label::before,
+	.checkbox-custom:checked+.checkbox-custom-label::after {
 		width: 12px;
 		height: 12px;
 	}
@@ -818,7 +809,7 @@
 	}
 
 	.container-list-item {
-		width: 340px;
+		width: 310px;
 	}
 
 	.footer-item-translation,
@@ -894,12 +885,12 @@
         min-height: 70px;
     } */
 
-	#review_stars1 input:checked ~ label i {
+	#review_stars1 input:checked~label i {
 		color: #ffea00;
 		font-size: 13px;
 	}
 
-	#review_stars1 input ~ label i {
+	#review_stars1 input~label i {
 		font-size: 13px;
 	}
 
@@ -929,7 +920,7 @@
 
 	.name-info-title,
 	.about-translation-time {
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 	.receive {
@@ -1235,12 +1226,19 @@
 		-webkit-box-align: start;
 		align-items: flex-start;
 	}
+
+	.container-item-table {
+		flex-wrap: wrap;
+	}
+
+	.wrapper-table-item {
+		flex-basis: 100%;
+	}
 }
 
 @media only screen and (max-width: 1152px) and (min-width: 320px),
-	(max-height: 1000px) {
-	.next-strim {
-	}
+(max-height: 1000px) {
+	.next-strim {}
 
 	.wrapper-right-list-whatch .wrapper-whatching {
 		height: 115px;
@@ -1367,8 +1365,8 @@
 		font-size: 7px;
 	}
 
-	#review_stars2 input ~ label i,
-	#review_stars3 input ~ label i {
+	#review_stars2 input~label i,
+	#review_stars3 input~label i {
 		color: transparent;
 		border: 1px solid #ffffff;
 		border-radius: 100%;
@@ -1386,8 +1384,8 @@
 		position: relative;
 	}
 
-	#review_stars2 input:checked ~ label i,
-	#review_stars3 input:checked ~ label i {
+	#review_stars2 input:checked~label i,
+	#review_stars3 input:checked~label i {
 		font-size: 3px;
 		color: #ffffff;
 		position: relative;
@@ -1421,8 +1419,8 @@
 		display: block;
 	}
 
-	.sount-input .checkbox-custom + .checkbox-custom-label::before,
-	.audio-container .checkbox-custom + .checkbox-custom-label::before {
+	.sount-input .checkbox-custom+.checkbox-custom-label::before,
+	.audio-container .checkbox-custom+.checkbox-custom-label::before {
 		margin-right: 5px;
 		margin-bottom: 3px;
 		width: 5px;
@@ -1834,9 +1832,7 @@
 		font-size: 12px;
 	}
 
-	.active-delete-question
-		.wrapper-notification-message
-		.delete-notification-message {
+	.active-delete-question .wrapper-notification-message .delete-notification-message {
 		font-size: 12px;
 	}
 
@@ -2023,11 +2019,11 @@
 		height: 14px;
 	}
 
-	#review_stars1 input ~ label i {
+	#review_stars1 input~label i {
 		font-size: 9px;
 	}
 
-	#review_stars1 input:checked ~ label i {
+	#review_stars1 input:checked~label i {
 		color: #ffea00;
 		font-size: 8px;
 	}
@@ -2056,10 +2052,7 @@
 		height: 55vh;
 	}
 
-	.active-small-height
-		.whatch-stream-player
-		.small-height-block
-		.send-violations-btn {
+	.active-small-height .whatch-stream-player .small-height-block .send-violations-btn {
 		margin-right: 5px;
 		font-size: 12px;
 	}
@@ -2172,7 +2165,7 @@
 		margin-right: 10px;
 	}
 
-	.list-right-managment li + li {
+	.list-right-managment li+li {
 		margin-left: 10px;
 		margin-right: 0;
 	}
@@ -2217,20 +2210,12 @@
 		width: 29%;
 	}
 
-	.sount-input
-		> .checkbox-custom:checked
-		+ .checkbox-custom-label
-		> .checkbox-custom-label-span::after,
-	.audio-container
-		.checkbox-custom:checked
-		+ .checkbox-custom-label
-		> .checkbox-custom-label-span::after {
+	.sount-input>.checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after,
+	.audio-container .checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after {
 		top: -3px;
 	}
 
-	.checkbox-custom:checked
-		+ .checkbox-custom-label
-		> .checkbox-custom-label-span::after {
+	.checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after {
 		top: -2px;
 	}
 
@@ -2244,6 +2229,7 @@
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 320px) {
+
 	.translation,
 	.wrapper-start-translation {
 		display: none !important;
@@ -2405,7 +2391,7 @@
 		margin: 0 auto;
 	}
 
-	.checkbox-custom:checked + .checkbox-custom-label::after {
+	.checkbox-custom:checked+.checkbox-custom-label::after {
 		left: 4px;
 		top: 3px;
 	}
@@ -2428,6 +2414,7 @@
 }
 
 @media only screen and (max-width: 808px) and (min-width: 320px) {
+
 	.container-stream .content,
 	.wrapper-about-frame {
 		max-height: calc(100vh - 53px);
@@ -2583,8 +2570,7 @@
         font-size: 16px;
     } */
 
-	.img-translation {
-	}
+	.img-translation {}
 
 	.translation-btn {
 		display: block;
@@ -2610,11 +2596,9 @@
 		width: calc(100% - 70px);
 	}
 
-	.wrapper-center-block .social-list {
-	}
+	.wrapper-center-block .social-list {}
 
-	.wrapper-center-block .social-list .social-item {
-	}
+	.wrapper-center-block .social-list .social-item {}
 
 	.center-info-account {
 		margin: 10px 0;
@@ -2716,7 +2700,7 @@
 		height: 21vh;
 	}
 
-	.active-small-height > div {
+	.active-small-height>div {
 		height: 21vh;
 	}
 
@@ -2751,10 +2735,7 @@
 	.active-small-height .small-height-left,
 	.active-small-height .whatch-stream-player .small-height-block,
 	.list-whatch-small-height,
-	.active-small-height
-		.whatch-stream-player
-		.item-footer
-		.icon-container-strim {
+	.active-small-height .whatch-stream-player .item-footer .icon-container-strim {
 		display: none !important;
 	}
 
@@ -2763,10 +2744,7 @@
 	}
 
 	.active-small-height .whatch-stream-player .item-footer .icon-container-strim,
-	.active-small-height
-		.whatch-stream-player
-		.item-footer
-		.container-title-strim-footer {
+	.active-small-height .whatch-stream-player .item-footer .container-title-strim-footer {
 		display: -webkit-box;
 		display: flex;
 	}
@@ -2930,8 +2908,8 @@
 		margin-left: 2px;
 	}
 
-	.sount-input .checkbox-custom + .checkbox-custom-label::before,
-	.audio-container .checkbox-custom + .checkbox-custom-label::before {
+	.sount-input .checkbox-custom+.checkbox-custom-label::before,
+	.audio-container .checkbox-custom+.checkbox-custom-label::before {
 		margin-right: 5px;
 		margin-bottom: 3px;
 		width: 5px;
@@ -2947,8 +2925,8 @@
 		width: 39%;
 	}
 
-	#review_stars2 input ~ label i,
-	#review_stars3 input ~ label i {
+	#review_stars2 input~label i,
+	#review_stars3 input~label i {
 		color: transparent;
 		border: 1px solid #ffffff;
 		border-radius: 100%;
@@ -2966,8 +2944,8 @@
 		position: relative;
 	}
 
-	#review_stars2 input:checked ~ label i,
-	#review_stars3 input:checked ~ label i {
+	#review_stars2 input:checked~label i,
+	#review_stars3 input:checked~label i {
 		font-size: 3px;
 		color: #ffffff;
 		position: relative;
@@ -2975,8 +2953,8 @@
 		top: -1px;
 	}
 
-	.sount-input .checkbox-custom:checked + .checkbox-custom-label::after,
-	.audio-container .checkbox-custom:checked + .checkbox-custom-label::after {
+	.sount-input .checkbox-custom:checked+.checkbox-custom-label::after,
+	.audio-container .checkbox-custom:checked+.checkbox-custom-label::after {
 		width: 5px;
 		height: 5px;
 	}
@@ -3146,8 +3124,8 @@
 		font-size: 12px;
 	}
 
-	.checkbox-custom + .checkbox-custom-label::before,
-	.checkbox-custom:checked + .checkbox-custom-label::after {
+	.checkbox-custom+.checkbox-custom-label::before,
+	.checkbox-custom:checked+.checkbox-custom-label::after {
 		width: 8px;
 		height: 8px;
 		margin-right: 5px;
@@ -3254,7 +3232,7 @@
 		max-width: 179px;
 	}
 
-	#review_stars4 input ~ label i {
+	#review_stars4 input~label i {
 		font-size: 6px;
 	}
 
@@ -3263,7 +3241,7 @@
 		height: 15px;
 	}
 
-	#review_stars4 input:checked ~ label i {
+	#review_stars4 input:checked~label i {
 		font-size: 6px;
 		color: #ffffff;
 	}
@@ -3346,8 +3324,7 @@
 		padding-right: 0;
 	}
 
-	.icon-container-strim {
-	}
+	.icon-container-strim {}
 
 	.redactor-list-afisha .list-item .container-list-item {
 		width: 100%;
@@ -3448,8 +3425,7 @@
 		width: 100%;
 	}
 
-	.active-small-height .bottom-pay-info {
-	}
+	.active-small-height .bottom-pay-info {}
 
 	.active-small-height .wrapper-whatching {
 		display: none;
@@ -3463,7 +3439,7 @@
 
 @media only screen and (max-width: 500px) and (min-width: 320px) {
 	.left-content-stream {
-		width: 150px;
+		width: 130px;
 	}
 
 	.menu-left__icon {
@@ -3874,6 +3850,7 @@
 	.wrapper-baner-translation {
 		width: 60%;
 	}
+
 	.wrapper-baner-translation.drop-field {
 		width: 100%;
 	}
@@ -4173,16 +4150,12 @@
 		margin: 0;
 	}
 
-	.checkbox-custom
-		+ .checkbox-custom-label
-		> .checkbox-custom-label-span::before {
+	.checkbox-custom+.checkbox-custom-label>.checkbox-custom-label-span::before {
 		width: 10px;
 		height: 10px;
 	}
 
-	.checkbox-custom:checked
-		+ .checkbox-custom-label
-		> .checkbox-custom-label-span::after {
+	.checkbox-custom:checked+.checkbox-custom-label>.checkbox-custom-label-span::after {
 		width: 10px;
 		height: 10px;
 		top: 2px;
