@@ -878,7 +878,7 @@ $(document).ready(function () {
 			.closest(".container-stream")
 			.find(".wrapper-stream-content")
 			.toggleClass("active-frame-height");
-		setTimeout(calcSize, 300);
+		setTimeout(calcSize(), 1300);
 		console.log("frame");
 	});
 
