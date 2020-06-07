@@ -1103,7 +1103,7 @@ button {
 }
 
 .wrapper-container-pay button {
-  max-width: 170px;
+  max-width: 172px;
   width: 100%;
   height: 35px;
   position: relative;
@@ -1457,7 +1457,7 @@ button {
 .container-list-item {
   border-right: 1px solid #597210;
   -webkit-box-flex: 0;
-  flex: none;
+  ;
   margin-right: 0 !important;
   width: 394px;
   height: 100%;
@@ -1469,15 +1469,25 @@ button {
   padding-right: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  max-height: 100%;
 }
 
-.container-list-item a:hover{
+.container-list-item a:hover {
   color: white;
+}
+
+.containeer-about-translation {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
 }
 
 .public-footer,
 .footer-list {
   margin-top: auto;
+  flex-shrink: 0;
+  flex-basis: auto;
 }
 
 .removing .container-list-item {
@@ -1523,6 +1533,8 @@ button {
 .wrapper-baner-translation {
   position: relative;
   width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .wrapper-baner-translation:before {
@@ -1551,8 +1563,8 @@ button {
 }
 
 .block-about-traslation {
-  max-height: 40px;
-  overflow-y: auto;
+  ;
+  flex: 1 1;
 }
 
 .drop-field+.block-about-traslation {
@@ -1736,6 +1748,7 @@ button {
   padding-left: 10px;
   position: relative;
   padding-top: 5px;
+  height: 100%;
 }
 
 .list-item:first-child {
@@ -3840,9 +3853,9 @@ div.scrollWrapper {
 }
 
 .edit-about-translation {
-  height: 80px;
+  height: 95%;
   resize: none;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   background-color: rgba(0, 0, 0, 0.2);
   transition: all 0.5s;
 }
@@ -4496,7 +4509,8 @@ div.scrollWrapper {
 .wrapper-table-item:nth-child(2) {
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 70%;;
+  flex-basis: 70%;
+  ;
 }
 
 .exit-btn::after {
@@ -7427,7 +7441,8 @@ div.scrollWrapper {
 .active-small-height .wrapper-wideo-players {
   -webkit-box-align: start;
   align-items: flex-start;
-  height: calc(100% - 45px);
+  width: 100%;
+  height: 100%;
 }
 
 .active-small-height .whatch-stream-player .name-stream {
@@ -7500,7 +7515,7 @@ div.scrollWrapper {
 .active-small-height.no-bg .about-frame {
   padding: 5px 0;
   border-bottom: none;
-  height: calc(46vh - 125px);
+  height: calc(45vh - 125px);
 }
 
 /* .active-small-height .content-list-chat {
@@ -7513,7 +7528,7 @@ div.scrollWrapper {
 }
 
 .active-small-height .big-stream-container {
-  height: 100%;
+  height: inherit;
 }
 
 .small-height-list {
@@ -7594,6 +7609,10 @@ div.scrollWrapper {
 
 .active-small-height .small-height-left .icon-footer {
   opacity: 0.3;
+  min-width: 25p;
+  min-height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .active-small-height .small-height-left .watch-info {
@@ -7603,12 +7622,12 @@ div.scrollWrapper {
   -webkit-box-direction: reverse;
   flex-direction: column-reverse;
   position: relative;
-  top: -35px;
+  top: -26px;
   margin-left: 0;
 }
 
 .active-small-height .small-height-left .watch-info .number-count {
-  margin-bottom: 16px;
+  margin-bottom: 11px;
   margin-left: 3px;
 }
 
@@ -7632,10 +7651,12 @@ div.scrollWrapper {
   flex-direction: column;
   -webkit-box-align: center;
   align-items: center;
+  justify-content: center;
+  height: 102%;
 }
 
 .container-info-about-strim-video {
-  width: 75%;
+  width: 70%;
 }
 
 .active-small-height .container-info-about-strim-video {
@@ -8262,7 +8283,6 @@ div.scrollWrapper {
 }
 
 .container-afisha {
-  overflow-x: hidden;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;

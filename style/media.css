@@ -550,7 +550,8 @@
     } */
 
 	.right-block-whatch {
-		max-width: 305px;
+		max-width: 325px;
+		width: 30%;
 	}
 
 	/* 
@@ -1155,7 +1156,7 @@
 	}
 
 	.text-donut {
-		font-size: 10px !important;
+		font-size: 7px !important;
 	}
 
 	.warning-block {
@@ -1738,6 +1739,7 @@
 	.active-small-height .whatch-stream-player {
 		width: calc(100% - 70px);
 		margin-left: 10px;
+		height: 100%;
 	}
 
 	/* .active-small-height .container-info-about-strim-video {
@@ -2348,6 +2350,7 @@
 
 	.container-info-about-strim-video {
 		width: 100%;
+		height: 100%;;
 	}
 
 	.wrapper-content-player {
@@ -2446,7 +2449,7 @@
 	}
 
 	.frame {
-		font-size: 24px;
+		font-size: 16px;
 	}
 
 	.left-header-block,
@@ -2464,8 +2467,6 @@
 		
 	}
 }
-
-@media only screen 
 
 @media only screen and (max-width: 768px) and (min-width: 320px) {
 	.right-chat-block {
