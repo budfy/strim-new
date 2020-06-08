@@ -117,6 +117,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 1.2;
+  max-height: 100vh;
+  overflow-y: hidden;
 }
 
 ol,
@@ -1155,7 +1157,7 @@ button {
 
 .right-block-whatch {
   max-width: 390px;
-  width: 25%;
+  max-width: 30%;
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -1563,7 +1565,7 @@ button {
 }
 
 .block-about-traslation {
-  ;
+  min-height: 24px;
   flex: 1 1;
 }
 
@@ -3527,13 +3529,13 @@ div.scrollWrapper {
 .choice-block {
   display: -webkit-box;
   display: flex;
-  @media: ;
 }
 
 .choice {
   text-transform: uppercase;
   font-size: 16px;
   width: 160px;
+  padding-left: 3%;
 }
 
 .choice-yes,
@@ -3828,6 +3830,7 @@ div.scrollWrapper {
   font-size: 25px;
   color: #737270;
   text-align: center;
+  padding: 5px 10px;
 }
 
 .edit-image,
@@ -3916,6 +3919,10 @@ div.scrollWrapper {
   margin-left: 15px;
   font-size: 12px;
   color: wheat;
+}
+
+.item-info-variant .non-stop-buy-ticket {
+  line-height: 1.5;
 }
 
 .free-status-price {
@@ -6131,14 +6138,14 @@ div.scrollWrapper {
 
 .end-sell-ticket {
   position: relative;
-  top: -76px;
-  height: 76px;
+  top: -100%;
+  /* height: 76px; */
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .container-checkbox {
-  top: -76px;
+  top: -84px;
   position: relative;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -6146,7 +6153,7 @@ div.scrollWrapper {
 }
 
 .active-sell {
-  height: 78px;
+  height: 115px;
 }
 
 .active-sell .end-sell-ticket,
@@ -6588,7 +6595,7 @@ div.scrollWrapper {
   transition: 0.5s;
   display: -webkit-box;
   display: flex;
-  bottom: 5px;
+  bottom: 20px;
 }
 
 .card-active {
