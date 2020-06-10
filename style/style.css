@@ -4027,6 +4027,7 @@ div.scrollWrapper {
   margin-right: 22px;
   max-height: unset;
   overflow: auto;
+  min-height: 150px;
 }
 
 .setting-transfer-tickets,
