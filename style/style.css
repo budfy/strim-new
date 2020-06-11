@@ -4881,11 +4881,11 @@ div.scrollWrapper {
 }
 
 .wrapper-setting-frame {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  flex-direction: column;
+  flex-direction: column; */
   height: 100%;
 }
 
@@ -6657,22 +6657,27 @@ div.scrollWrapper {
 
 .violations::-webkit-input-placeholder {
   font-size: 22px;
+  font-family: Montserrat, sans-serif;
 }
 
 .violations::-moz-placeholder {
   font-size: 22px;
+  font-family: Montserrat, sans-serif;
 }
 
 .violations:-ms-input-placeholder {
   font-size: 22px;
+  font-family: Montserrat, sans-serif;
 }
 
 .violations::-ms-input-placeholder {
   font-size: 22px;
+  font-family: Montserrat, sans-serif;
 }
 
 .violations::placeholder {
   font-size: 22px;
+  font-family: Montserrat, sans-serif;
 }
 
 .send-violations-btn {
@@ -7545,7 +7550,7 @@ div.scrollWrapper {
 
 .active-small-height {
   position: relative;
-  height: calc(46vh - 80px);
+  height: calc(46vh - 80px) !important;
 }
 
 .small-height-block,

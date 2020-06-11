@@ -107,7 +107,7 @@ $(document).ready(function () {
 		if (this.innerText) {
 			$(this).addClass("after-grivna");
 
-			console.log("gfgh");
+			//console.log("gfgh");
 		} else {
 			$(this).removeClass("after-grivna");
 		}
@@ -501,8 +501,8 @@ $(document).ready(function () {
 	});
 
 	$(".close-broadcast-active").on("click", function () {
-		console.log("dfdsf");
-		console.log($(this).closest(".active-broadcast"));
+		//console.log("dfdsf");
+		//console.log($(this).closest(".active-broadcast"));
 		$(this).closest(".active-broadcast").slideUp(500);
 	});
 
@@ -822,7 +822,7 @@ $(document).ready(function () {
 				.closest(".content")
 				.find(".wrapper-stream-content")
 				.removeClass("active-frame-height");
-			console.log("item-stream if");
+			//console.log("item-stream if");
 		} else {
 			$(this)
 				.closest(".content")
@@ -833,7 +833,7 @@ $(document).ready(function () {
 				.closest(".content")
 				.find(".wrapper-stream-content")
 				.addClass("active-frame-height");
-			console.log("item-stream else");
+			//console.log("item-stream else");
 			setTimeout(calcSize, 300);
 		}
 	});
@@ -846,10 +846,10 @@ $(document).ready(function () {
 			.slideToggle(500);
 		$(".wrapper-about-frame").toggleClass("active-small-height");
 		setTimeout(calcSize, 300);
-		console.log("header-sign-btn");
+		//console.log("header-sign-btn");
 		$(".wrapper-stream-content").toggleClass("active-small-height");
 		setTimeout(calcSize, 300);
-		console.log("header-sign-btn");
+		//console.log("header-sign-btn");
 	});
 
 	$(".start-translation").on("click", function (event) {
@@ -879,7 +879,7 @@ $(document).ready(function () {
 			.find(".wrapper-stream-content")
 			.toggleClass("active-frame-height");
 		setTimeout(calcSize(), 1300);
-		console.log("frame");
+		//console.log("frame");
 	});
 
 	$(".notifications-link").on("click", function () {
@@ -1091,7 +1091,7 @@ $(document).ready(function () {
 			.closest(".wrapper-frame-content")
 			.find(".setting-stream")
 			.removeClass("active-btn-setting");
-		console.log("Menu changed");
+		//console.log("Menu changed");
 	});
 
 	$(".rules").on("click", function (event) {
