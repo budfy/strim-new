@@ -453,8 +453,8 @@
 	}
 
 	.close-text-block {
-		width: 25px;
-		height: 25px;
+		width: 1.5em;
+		height: 1.5em;
 	}
 
 	.autorization {
@@ -3460,6 +3460,10 @@
 	.content-admin .name-account-profile {
 		font-size: 20px;
 	}
+
+	.regulations {
+		font-size: 14px;
+	}
 }
 
 /* !SECTION */
@@ -4005,6 +4009,10 @@
 		font-size: 11px;
 		min-width: 60px;
 	}
+
+	.regulations {
+		font-size: 10px;
+	}
 }
 
 /* !SECTION */
@@ -4259,7 +4267,7 @@
 /* SECTION: max-height 450 */
 @media only screen and (max-height: 450px) {
 	.active-registration-form {
-		height: 220px;
+		height: calc(75vh - 80px);
 	}
 
 	.active-registration-form .wrapper-registration {
@@ -4294,3 +4302,22 @@
 }
 
 /* !SECTION */
+@media only screen and (max-height: 385px) {
+	.autorization-frame .edit-input-form {
+		padding: 0 3px;
+	}
+
+	.autorization-frame .input-form-input {
+		margin-bottom: 2px;
+	}
+
+	.wrapper-log {
+		height: auto;
+	}
+
+	.wrapper-sign-content {
+		min-height: unset;
+	}
+}
+
+/* SECTION: max-height 385*/

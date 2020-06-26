@@ -741,8 +741,8 @@ button {
 }
 
 .close-text-block {
-  width: 30px;
-  height: 30px;
+  width: 2em;
+  height: 2em;
   border: none;
   background-color: transparent;
   background: url("../image/cancel.svg") no-repeat;
@@ -759,6 +759,7 @@ button {
   outline: none;
   border: none;
   resize: none;
+  padding: 0 5px;
 }
 
 .rules__wrapper {
