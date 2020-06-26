@@ -45,7 +45,12 @@ $(document).ready(function () {
 	$(".full-btn").click(function () {
 		toggleFullScreen();
 		$(".popup-overlay").fadeOut(500);
+		$(".fullscreen-btn").show(250);
 	});
+
+	$(".fullscreen-btn").click(function () {
+		toggleFullScreen();
+	})
 
 	function calcSize() {
 		let heightStart = $(

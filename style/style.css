@@ -8562,3 +8562,36 @@ div.scrollWrapper {
   border: 2px solid #ccff00;
   color: #ccff00;
 }
+
+.fullscreen-btn {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  opacity: .3;
+  z-index: 9999;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  display: none;
+}
+
+.fullscreen-btn svg {
+  fill: #ffffff;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fullscreen-btn:hover {
+  border-color: #ccff00;
+}
+
+.fullscreen-btn:hover svg {
+  fill: #ccff00;
+}
