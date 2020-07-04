@@ -8571,8 +8571,8 @@ div.scrollWrapper {
   z-index: 9999;
   background-color: transparent;
   border: 1px solid #ffffff;
-  height: 50px;
-  width: 50px;
+  height: 32px;
+  width: 32px;
   border-radius: 5px;
   display: none;
 }
