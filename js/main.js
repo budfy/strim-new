@@ -855,6 +855,17 @@ $(document).ready(function () {
 		$(".wrapper-stream-content").toggleClass("active-small-height");
 		setTimeout(calcSize, 300);
 		//console.log("header-sign-btn");
+		if ($(".content").hasClass("scroll-pane")) {
+			$(".content")
+			.removeClass("scroll-pane")
+			.addClass("no-scroll");
+			console.log("11111")
+		} else {
+			$(".content")
+			.addClass("scroll-pane")
+			.removeClass("no-scroll");			
+			console.log("22222")
+		}
 	});
 
 	$(".start-translation").on("click", function (event) {
@@ -885,6 +896,17 @@ $(document).ready(function () {
 			.toggleClass("active-frame-height");
 		setTimeout(calcSize(), 1300);
 		//console.log("frame");
+				if ($(".content").hasClass("scroll-pane")) {
+			$(".content")
+			.removeClass("scroll-pane")
+			.addClass("no-scroll");
+			console.log("11111")
+		} else {
+			$(".content")
+			.addClass("scroll-pane")
+			.removeClass("no-scroll");			
+			console.log("22222")
+		}
 	});
 
 	$(".notifications-link").on("click", function () {
@@ -1211,4 +1233,6 @@ $(document).ready(function () {
 		$(".list-language").fadeTo(500, 0);
 		$(".language").removeClass("language-active");
 	});
+
+
 });

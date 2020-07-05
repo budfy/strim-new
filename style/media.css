@@ -3945,9 +3945,9 @@
 		font-size: 8px;
 	}
 
-	.wrapper-baner-translation {
+	/* .wrapper-baner-translation {
 		width: 60%;
-	}
+	} */
 
 	.wrapper-baner-translation.drop-field {
 		width: 100%;
@@ -4315,7 +4315,7 @@
 			margin-bottom: 2px;
 		}
 
-		.wrapper-log {
+		.wrapper-loged {
 			height: auto;
 		}
 

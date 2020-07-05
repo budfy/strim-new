@@ -205,6 +205,10 @@ button {
   color: #ffffff;
 }
 
+.no-scroll{
+  overflow: hidden!important;
+}
+
 /*----------------------start header---------------*/
 .header {
   padding: 0 30px 20px 30px;
@@ -4025,10 +4029,10 @@ div.scrollWrapper {
 }
 
 .block-about-traslation.your-mark {
-  margin-right: 22px;
+  /* margin-right: 22px; */
   max-height: unset;
   overflow: auto;
-  min-height: 150px;
+  min-height: 160px;
 }
 
 .setting-transfer-tickets,
@@ -5046,7 +5050,7 @@ div.scrollWrapper {
   padding-bottom: 2px;
 }
 
-.registration::after,
+/* .registration::after,
 .sign-in-btn::after {
   content: "";
   position: absolute;
@@ -5099,7 +5103,7 @@ div.scrollWrapper {
       rgba(255, 255, 255, 1) 47%,
       rgba(255, 255, 255, 1) 85%,
       rgba(255, 255, 255, 0.13) 100%);
-}
+} */
 
 .social-reg {
   width: 100%;
@@ -7407,7 +7411,7 @@ div.scrollWrapper {
 
 .active-frame-height {
   overflow-y: auto;
-  height: calc(46vh - 80px);
+  height: calc(46vh - 65px);
   margin-right: -6px;
 }
 
@@ -7542,7 +7546,7 @@ div.scrollWrapper {
 }
 
 .active-small-height .big-stream-container {
-  height: inherit;
+  height: 100%;
 }
 
 .small-height-list {
@@ -8260,7 +8264,8 @@ div.scrollWrapper {
 
 .scroll-pane::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 12px;
+  width: 6px;
+  height: 6px;
 }
 
 /* background of the scrollbar except button or resizer */
@@ -8271,11 +8276,10 @@ div.scrollWrapper {
 /* scrollbar itself */
 .scroll-pane::-webkit-scrollbar-thumb {
   background-color: #1f1f1f;
-  border-radius: 1px;
-  border: 4px solid #000;
+  border-radius: 2px;
+  border: 2px solid #000;
 }
 
-/* set button(top and bottom of the scrollbar) */
 .scroll-pane::-webkit-scrollbar-button {
   display: none;
 }
@@ -8288,7 +8292,7 @@ div.scrollWrapper {
 .smile-wrapper.scroll-pane::-webkit-scrollbar-thumb {
   background-color: #1f1f1f;
   border-radius: 1px;
-  border: 10px solid #000;
+  border: 3px solid #000;
 }
 
 .container-list-item.scroll-pane {
