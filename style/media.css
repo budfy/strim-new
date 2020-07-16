@@ -606,6 +606,7 @@
 	.add-payment-btn {
 		width: 25px;
 		height: 25px;
+		font-size: 23px;
 	}
 
 	.activeCard .add-payment {
@@ -773,7 +774,7 @@
 	}
 
 	.active-registration-form {
-		height: 322px;
+		height: 350px;
 	}
 
 	.title-block-conditions {
@@ -1340,6 +1341,8 @@
 
 /* !MEDIA */
 
+
+
 /* MEDIA: max-width 1024 */
 @media only screen and (max-width: 1024px) and (min-width: 320px) {
 	.list-strim-about {
@@ -1565,7 +1568,9 @@
 	.big-stream-container {
 		width: 100%;
 		max-width: unset;
-		height: 100%;
+		/* height: 50%; */
+		height: auto;
+		max-height: 100%;
 	}
 
 	.active-small-height .chat-wrapper {
@@ -2079,7 +2084,9 @@
 	.about-frame,
 	.regulations-block {
 		padding: 0;
-		height: 55vh;
+		/* height: 55vh; */
+		max-height: 55vh;
+		height: auto;
 	}
 
 	.active-small-height .whatch-stream-player .small-height-block .send-violations-btn {
@@ -2255,6 +2262,10 @@
 
 	.chat-setting-wrapper .chat-wrapper {
 		height: 100%;
+	}
+
+	.active-small-height .list-whatch{
+		column-count: 1;
 	}
 }
 
